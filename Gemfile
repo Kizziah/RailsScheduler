@@ -11,9 +11,12 @@ gem 'jbuilder', '~> 1.0.1'
 gem 'turbolinks'
 gem "figaro"
 gem "haml"
+gem 'protected_attributes'
 
 gem 'devise'
 
+gem "pry"
+gem 'awesome_print'
 gem 'rspec-rails'
 gem 'capybara'
 gem 'launchy'
