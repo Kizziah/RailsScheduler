@@ -1,15 +1,15 @@
-
 #hero
   #hero_text
     %h1 Mr Stubbs!
     %h2 Tour Bus Transportation
     %h2.ja Montego Bay, Jamaica
-    %a.button{:href => "tel:+1-876-995-9466"}
+    %a.button{"data-reveal-id" => "myModal", :href => "#"}
       %span.icon-handset
       %span.number
-        +1-876-995-9466
+        Book A Tour
 #page_wrap
   #main
+
     #content
       %h1
         %span.icon-bus
@@ -17,8 +17,7 @@
       %p
         %strong
           Hello!
-          = succeed "!" do
-            %em Wah Gwan
+          %em Wah Gwan!
       %p
         I want to be the first to give you a warm welcome you to Jamaica!
         This country is very dear to me. I love showing visitors its natural
@@ -79,3 +78,8 @@
 #copyright
   © Mr. Stubbs
   %span.copyright_year 2013
+
+#myModal.reveal-modal{:class => "xlarge"}
+  %h2 Appointment
+  = render "form"
+  %a.close-reveal-modal ×

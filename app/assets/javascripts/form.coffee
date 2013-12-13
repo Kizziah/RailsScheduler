@@ -20,7 +20,6 @@ calenderDateClickAction = (date) ->
   # $("#hour_picker").hide()
   # $(".appointment_button").show()
 
-
 jQuery ->
   $("table.hours td").click (event) ->
     calenderDateClickAction($(this))

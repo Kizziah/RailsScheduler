@@ -1,0 +1,45 @@
+#datepicker
+
+  = simple_form_for @appointment do |f|
+    = f.hidden_field :hours
+    = f.hidden_field :date
+
+
+#appointment_details
+  #hour_picker
+    %table.hours{:border => "1"}
+      %tr
+        %th.selected_date
+      %tr.cal_table
+        %td.0700
+          %input{type: "checkbox"} 7:00 am
+      %tr.cal_table2
+        %td.0800
+          %input{type: "checkbox"} 8:00 am
+      %tr.cal_table
+        %td.0900
+          %input{type: "checkbox"} 9:00 am
+      %tr.cal_table2
+        %td.1000
+          %input{type: "checkbox"} 10:00 am
+      %tr#5.cal_table
+        %td.1100
+          %input{type: "checkbox"} 11:00 am
+      %tr#6.cal_table2
+        %td.1200
+          %input{type: "checkbox"} 12:00 pm
+      %tr#7.cal_table
+        %td.1300
+          %input{type: "checkbox"} 1:00 pm
+      %tr#8.cal_table2
+        %td.1400
+          %input{type: "checkbox"} 2:00 pm
+      %tr#8.cal_table2
+        %td.1500
+          %input{type: "checkbox"} 3:00 pm
+      %tr#8.cal_table2
+        %td.1600
+          %input{type: "checkbox"} 4:00 pm
+
+  #final_hour
+    %h2
