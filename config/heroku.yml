@@ -1,0 +1,4 @@
+production:
+  app: mrlowes
+  config:
+    BUNDLE_WITHOUT: "development:test"
