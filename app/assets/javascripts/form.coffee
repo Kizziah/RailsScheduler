@@ -1,16 +1,16 @@
 $ ->
-
+  $("#hour_picker").hide()
   currentTime = new Date()
   month = currentTime.getMonth()
   day = currentTime.getDate()
   year = currentTime.getFullYear()
-  extra = day + 28
   $("#datepicker").datepicker
     minDate: new Date(year, month, day)
-    maxDate: new Date(year, month, extra)
     dateFormat: "yy-mm-dd"
     onSelect: (dateText) ->
       setFinalDate = dateText
+
+      $("#hour_picker").show()
 
 calenderDateClickAction = (date) ->
   $('#final_hour h2').empty()
