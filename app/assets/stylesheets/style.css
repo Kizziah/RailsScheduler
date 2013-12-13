@@ -1,0 +1,334 @@
+/*
+
+               Color One: #000000
+               Color Two: #000000
+               Color Three: #000000
+               Color Four: #000000
+
+*/
+/*------------------------------------------------------------------------------------------------------------------
+                                                      RESET
+------------------------------------------------------------------------------------------------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  overflow-y: scroll;
+}
+html, body {
+  height: 100%;
+}
+body {
+  font-size: 62.5%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #404040;
+}
+ul {
+  list-style: disc inside;
+  padding-left: 10px;
+}
+ol {
+  list-style: decimal inside;
+  padding-left: 10px;
+}
+li {
+  list-style-position: outside;
+}
+a {
+  outline: none;
+  text-decoration: none;
+}
+a img {
+  border: none;
+  background: none;
+}
+img {
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+}
+p {
+  margin-top: 10px;
+}
+/*------------------------------------------------------------------------------------------------------------------
+                                                      UTILITY
+------------------------------------------------------------------------------------------------------------------*/
+.clear_both {
+  clear: both;
+}
+/*------------------------------------------------------------------------------------------------------------------
+                                                      TYPOGRAPHY
+------------------------------------------------------------------------------------------------------------------*/
+p, li {
+  font-size: 1.2em;
+  line-height: 1.2em;
+  margin: 0 0 10px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Lily Script One', cursive;
+}
+h1 {
+  font-size: 3.6em;
+  font-weight: normal;
+}
+h2 {
+  font-size: 2.8em;
+  font-weight: normal;
+}
+h3 {
+  font-size: 2.6em;
+  font-weight: normal;
+  margin: 0 0 10px 0;
+}
+h4 {
+  font-size: 2.0em;
+  margin-bottom: 15px;
+}
+@font-face {
+  font-family: "my-font";
+  src: url("http://mr-stubbs.com//wp-content/themes/starkers-master/fonts/my-font.eot");
+  src: url("http://mr-stubbs.com//wp-content/themes/starkers-master/fonts/my-font.eot?#iefix") format("embedded-opentype"), url("http://mr-stubbs.com//wp-content/themes/starkers-master/fonts/my-font.woff") format("woff"), url("http://mr-stubbs.com//wp-content/themes/starkers-master/fonts/my-font.ttf") format("truetype"), url("http://mr-stubbs.com//wp-content/themes/starkers-master/fonts/my-font.svg#my-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.icon-analog:before,
+.icon-bus:before,
+.icon-handset:before,
+.icon-tag:before {
+  font-family: "my-font";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  text-decoration: inherit;
+}
+.icon-analog:before {
+  content: "\f100";
+}
+.icon-bus:before {
+  content: "\f101";
+}
+.icon-handset:before {
+  content: "\f102";
+}
+.icon-tag:before {
+  content: "\f103";
+}
+.icon-handset:before {
+  font-size: 50px;
+}
+/*------------------------------------------------------------------------------------------------------------------
+                                                      GRID
+------------------------------------------------------------------------------------------------------------------*/
+#grid {
+  background: url('http://mr-stubbs.com//wp-content/themes/starkers-master/custom_images/grid.png') no-repeat scroll top left;
+  width: 960px;
+  height: 1020px;
+  z-index: 1000;
+  display: none;
+  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+}
+/*------------------------------------------------------------------------------------------------------------------
+                                                      STRUCTURE
+------------------------------------------------------------------------------------------------------------------*/
+body {
+  background: url(http://mr-stubbs.com//wp-content/themes/starkers-master/custom_images/bg.png);
+}
+a {
+  color: #0078cc;
+}
+#hero {
+  position: relative;
+  content: '';
+  background: url('http://mr-stubbs.com//wp-content/themes/starkers-master/custom_images/hero.jpg') no-repeat center top;
+  width: 100%;
+}
+#hero #hero_text {
+  min-height: 495px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+  color: #fff;
+  color: #FFE455;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1);
+}
+#hero #hero_text h1 {
+  font-size: 100px;
+  margin: 0;
+  padding: 0;
+}
+#hero #hero_text h2 {
+  font-size: 60px;
+  margin: 0;
+  padding: 0;
+}
+#hero #hero_text h2.ja {
+  font-size: 50px;
+}
+a.button {
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  position: relative;
+  width: 300px;
+  display: inline-block;
+  padding: 19px 24px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #FFF;
+  border: 0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006DCC;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #04C #04C #002A80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  top: 35px;
+}
+a.button:hover {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+a.button span.number {
+  position: relative;
+  top: -7px;
+}
+#page_wrap {
+  max-width: 70%;
+  min-width: 44%;
+  margin: 0 auto 25px auto;
+  background: url(http://mr-stubbs.com//wp-content/themes/starkers-master/custom_images/air_mail.jpg);
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  position: relative;
+  top: -20px;
+  z-index: 10000000;
+  padding: 10px;
+}
+#page_wrap #main {
+  background: url('http://mr-stubbs.com//wp-content/themes/starkers-master/custom_images/thatch.png'), #ffffff;
+  border: 1px solid #ddd;
+  padding: 55px 20px;
+}
+#page_wrap #main #content {
+  max-width: 60%;
+  margin: 0 auto;
+}
+#page_wrap #main h1,
+#page_wrap #main h2,
+#page_wrap #main h3,
+#page_wrap #main h4,
+#page_wrap #main h5,
+#page_wrap #main h6 {
+  font-family: "Open Sans" sans-serif;
+  font-weight: bold;
+}
+#page_wrap #main h3 {
+  margin: 10px 0;
+  border-bottom: 1px dashed #404040;
+  padding-bottom: 15px;
+}
+#page_wrap #main p {
+  font-size: 16px;
+  margin: 15px auto;
+  line-height: 25px;
+}
+#page_wrap #main ul {
+  margin: 25px 0;
+  columns: 240px 2;
+  -webkit-columns: 240px 2;
+  -moz-columns: 240px 2;
+}
+
+#copyright{
+  width: 200px;
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+#prices{
+  margin-top: 50px;
+}
+
+#page_wrap #main ul li {
+  font-size: 16px;
+}
+@media (max-width: 480px) {
+  #hero #hero_text{
+    margin-top: -35px;
+  }
+  #hero #hero_text h1 {
+    font-size: 4em;
+  }
+  #hero #hero_text h2 {
+    font-size: 3.5em;
+  }
+  #hero #hero_text h2.ja {
+    font-size: 3em;
+  }
+  #page_wrap{
+    max-width: 100%;
+    margin-top: -115px;
+  }
+  #page_wrap p{
+    font-size: .5em;
+  }
+  #page_wrap h1, h3{
+    font-size: 2em;
+  }
+  #page_wrap #main #content{
+    max-width: 100%
+  }
+  a.button{
+    width: 250px;
+  }
+  #page_wrap #main ul {
+    margin: 25px 0;
+    columns: 100% 1;
+    -webkit-columns: 100% 1;
+    -moz-columns: 100% 1;
+  }
+}
+
+/*portrait tablet*/
+@media (min-width: 768px) and (max-width: 979px) {
+  #page_wrap #main #content {
+  max-width: 95%;
+  }
+}
+
+/*landscape tablet*/
+@media (max-device-width: 1024px) and (orientation: landscape) {
+  #page_wrap #main #content {
+  max-width: 95%;
+  }
+}
+/*------------------------------------------------------------------------------------------------------------------
+                                                      NAVIGATION
+------------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------------
+                                                      FOOTER
+------------------------------------------------------------------------------------------------------------------*/

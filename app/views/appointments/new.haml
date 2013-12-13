@@ -1,1 +1,81 @@
-%h1 Hello
+
+#hero
+  #hero_text
+    %h1 Mr Stubbs!
+    %h2 Tour Bus Transportation
+    %h2.ja Montego Bay, Jamaica
+    %a.button{:href => "tel:+1-876-995-9466"}
+      %span.icon-handset
+      %span.number
+        +1-876-995-9466
+#page_wrap
+  #main
+    #content
+      %h1
+        %span.icon-bus
+        Fast. Honest. Reliable.
+      %p
+        %strong
+          Hello!
+          = succeed "!" do
+            %em Wah Gwan
+      %p
+        I want to be the first to give you a warm welcome you to Jamaica!
+        This country is very dear to me. I love showing visitors its natural
+        beauty and authentic Jamaican hospitality.&nbsp;I can offer
+        %strong specialized packages
+        to ensure you have the
+        = succeed "," do
+          %strong most memorable experience possible
+        be it a quick jaunt to the Montego Bay craft market, winding up the
+        jungle-lined roads into the hills, taking you to the very best spot to
+        for fresh pineapple and mangoes, or an adventure of your choosing.
+      %p
+        I am a
+        = succeed "," do
+          %strong safe
+        = succeed "," do
+          %strong prompt
+        and
+        %strong licensed
+        tour driver. My sightseeing tour bus, “Be Happy,”
+        %strong seats up to twenty-six
+        and is equipped with an
+        %strong excellent air conditioner
+        for your comfort.
+      %p
+        I have recently received high
+        %strong accolades
+        from my peers for my
+        = succeed "," do
+          %strong punctuality
+        driving
+        = succeed "," do
+          %strong ability
+        = succeed "," do
+          %strong cleanliness
+        and
+        = succeed "." do
+          %strong attentiveness
+      %p Please contact me as soon as possible as I tend to book up fast.
+      %p Best,
+      %p Mr. Stubbs
+      #prices
+        %h3
+          %span.icon-tag
+          Popular Destinations
+        %ul
+          %li Ocho Rios
+          %li Negril
+          %li Dunn's River Falls
+          %li Dolphin Cove
+          %li Downtown Montego
+          %li Rose Hall Great House
+      .call_button
+        %p
+          %em
+            Call today!
+            %a{:href => "tel:+18769959466"} +1-876-995-9466
+#copyright
+  © Mr. Stubbs
+  %span.copyright_year 2013
