@@ -26,6 +26,8 @@ gem 'database_cleaner'
 gem 'factory_girl_rails'
 gem "selenium-webdriver", "~> 2.35.1"
 
+gem 'rails_12factor', group: :production
+
 gem 'heroku_san'
 
 group :doc do
