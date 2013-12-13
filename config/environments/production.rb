@@ -2,6 +2,7 @@ Mrlowes::Application.configure do
 
   config.cache_classes = true
 
+  config.assets.initialize_on_precompile = true
 
   config.eager_load = true
 
